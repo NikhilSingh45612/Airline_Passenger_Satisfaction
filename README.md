@@ -1,18 +1,18 @@
 # Airline Passenger_Satisfaction
 First semester programing project
 
-###Team members:
+### Made By:
  * [Nikhil Kumar](https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction.git)
 
 
-## [Presentation live Environment]()
+### [Presentation live Environment]()
 
 ## Project overview
 * First semester programing project
 * Predicting Satisfaction of airline passenger
 * collected data from kaggle.com
 * cleaned and engineered data
-* Used Logistic regression and Random forest models
+* Used Logistic regression and Random forest model 
 * Created streamlit for this project
 
 ## Code and Resources
