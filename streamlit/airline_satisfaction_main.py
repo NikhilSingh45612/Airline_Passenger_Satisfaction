@@ -45,16 +45,16 @@ import streamlit as st
 import seaborn as sns
 
 # Importing data
-eda_data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
+#eda_data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
 data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv', index_col=False)
-df = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
+#df = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
 
 
 
 
 
 def set_home():
-    st.image("pexels-pascal-renet-113017.jpg")
+    st.image("https://raw.githubusercontent.com/NikhilSingh45612/Airline_Passenger_Satisfaction/main/streamlit/images/pexels-pascal-renet-113017.jpg")
     st.write(intro, unsafe_allow_html=True)
     st.write(intro_herramientas_fuentes, unsafe_allow_html=True)
 
@@ -160,7 +160,7 @@ def set_classmod():
 import streamlit as st
 #from as_function import *
 
-st.sidebar.image('download.jpg', width=250)
+st.sidebar.image('https://raw.githubusercontent.com/NikhilSingh45612/Airline_Passenger_Satisfaction/main/streamlit/images/download.jpg', width=250)
 st.sidebar.header('Airline Satisfaction Analysis')
 st.sidebar.markdown('Prediction of passenger satisfaction')
 
