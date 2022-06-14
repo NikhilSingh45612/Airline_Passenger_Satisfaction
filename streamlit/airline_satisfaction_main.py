@@ -95,7 +95,7 @@ def set_analysis():
     with col1:
         st.markdown("#### 1: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Arrival Delay, Departure and Arrival Time Convenience, Ease of Online Booking AND Check-in Service.')
-        st.image("1.png")
+        st.image("images/1.png")
 
     with col2:
         st.markdown("#### 2: Satisfaction Rating provided by the various Passengers On: ")
