@@ -40,7 +40,7 @@ intro_herramientas_fuentes = '''
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 
@@ -52,9 +52,8 @@ from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 
 # Importing data
-eda_data = pd.read_csv(r'airline_passenger_satisfaction.csv')
 data = pd.read_csv(r'airline_passenger_satisfaction.csv', index_col=False)
-df = pd.read_csv(r'airline_passenger_satisfaction.csv')
+
 
 
 
@@ -191,3 +190,7 @@ elif menu == 'Analysis':
     set_analysis()
 elif menu == 'Classification Model':
     set_classmod()
+    
+   
+
+Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
