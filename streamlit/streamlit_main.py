@@ -5,7 +5,7 @@ import streamlit as st
 import seaborn as sns
 
 # Importing data
-data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/994f534e1e50f4dfa0e1880ddb6058a45ef25bce/notebook/airline_passenger_satisfaction.csv',)
+data = pd.read_csv(r'airline_passenger_satisfaction.csv',)
 
 st.sidebar.image('download.jpg', width=250)
 st.sidebar.header('Airline Satisfaction Analysis')
