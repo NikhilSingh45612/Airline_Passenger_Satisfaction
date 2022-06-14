@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
-import asp_intro import *
+from asp_intro import *
 
 
 # Importing data
