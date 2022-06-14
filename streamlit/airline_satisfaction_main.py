@@ -45,9 +45,9 @@ import streamlit as st
 import seaborn as sns
 
 # Importing data
-eda_data = pd.read_csv(r'airline_passenger_satisfaction.csv')
+
 data = pd.read_csv(r'airline_passenger_satisfaction.csv', index_col=False)
-df = pd.read_csv(r'airline_passenger_satisfaction.csv')
+
 
 
 
