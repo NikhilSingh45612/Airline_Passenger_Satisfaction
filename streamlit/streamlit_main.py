@@ -1,3 +1,38 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import streamlit as st
+import seaborn as sns
+
+# Importing data
+data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/994f534e1e50f4dfa0e1880ddb6058a45ef25bce/notebook/airline_passenger_satisfaction.csv',)
+
+st.sidebar.image('download.jpg', width=250)
+st.sidebar.header('Airline Satisfaction Analysis')
+st.sidebar.markdown('Prediction of passenger satisfaction')
+
+
+menu = st.sidebar.radio(
+    "Menu:",
+    ("Intro", "Data", "Analysis", "Classification Model"),
+)
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
+
+st.sidebar.markdown('---')
+st.sidebar.write('Project Submitted By: Nikhil Kumar')
+st.sidebar.write('Github Repositories:')
+st.sidebar.write('[Nikhil Github Repository Link](https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction.git)')
+
+if menu == 'Intro':
+    set_home()
+elif menu == 'Data':
+    set_data()
+elif menu == 'Analysis':
+    set_analysis()
+elif menu == 'Classification Model':
+    set_classmod()
+    
+   
 intro = '''
 # Airline Satisfaction Analysis
 ### Prediction of passenger satisfaction
@@ -36,21 +71,6 @@ intro_herramientas_fuentes = '''
 | - Sklearn  		| 		            |
 
 '''
-
-
-import pandas as pd
-import numpy as np
-#import matplotlib.pyplot as plt
-import streamlit as st
-import seaborn as sns
-
-# Importing data
-data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/994f534e1e50f4dfa0e1880ddb6058a45ef25bce/notebook/airline_passenger_satisfaction.csv', index_col=False)
-
-
-
-
-
 
 def set_home():
     st.image("pexels-pascal-renet-113017.jpg")
@@ -148,39 +168,4 @@ def set_classmod():
     st.subheader("*Prediction Using Naive Bayes*")
     st.write("##### Accuracy:")
     st.write("81.68982907299045")
-
-    
-
-
-
-
-
-
-import streamlit as st
-#from as_function import *
-
-st.sidebar.image('download.jpg', width=250)
-st.sidebar.header('Airline Satisfaction Analysis')
-st.sidebar.markdown('Prediction of passenger satisfaction')
-
-
-menu = st.sidebar.radio(
-    "Menu:",
-    ("Intro", "Data", "Analysis", "Classification Model"),
-)
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
-
-st.sidebar.markdown('---')
-st.sidebar.write('Project Submitted By: Nikhil Kumar')
-st.sidebar.write('Github Repositories:')
-st.sidebar.write('[Nikhil Github Repository Link]()')
-
-if menu == 'Intro':
-    set_home()
-elif menu == 'Data':
-    set_data()
-elif menu == 'Analysis':
-    set_analysis()
-elif menu == 'Classification Model':
-    set_classmod()
    
