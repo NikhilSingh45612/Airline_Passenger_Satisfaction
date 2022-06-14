@@ -44,13 +44,6 @@ import numpy as np
 import streamlit as st
 import seaborn as sns
 
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import mean_absolute_error
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-from sklearn import preprocessing
-
 # Importing data
 data = pd.read_csv(r'airline_passenger_satisfaction.csv', index_col=False)
 
@@ -190,7 +183,4 @@ elif menu == 'Analysis':
     set_analysis()
 elif menu == 'Classification Model':
     set_classmod()
-    
    
-
-Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
