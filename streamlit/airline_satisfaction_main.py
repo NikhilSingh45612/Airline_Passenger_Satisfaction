@@ -45,9 +45,9 @@ import streamlit as st
 import seaborn as sns
 
 # Importing data
-eda_data = pd.read_csv(r'airline_passenger_satisfaction.csv')
-data = pd.read_csv(r'airline_passenger_satisfaction.csv', index_col=False)
-df = pd.read_csv(r'airline_passenger_satisfaction.csv')
+eda_data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
+data = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv', index_col=False)
+df = pd.read_csv(r'https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/notebook/airline_passenger_satisfaction.csv')
 
 
 
@@ -88,45 +88,45 @@ def set_analysis():
     with col1:
         st.markdown("#### 1: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Arrival Delay, Departure and Arrival Time Convenience, Ease of Online Booking AND Check-in Service.')
-        st.image("images/1.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/1.png")
 
     with col2:
         st.markdown("#### 2: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Online Boarding, Gate Location, On-board Service AND Seat Comfort.')
-        st.image("2.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/2.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("#### 3: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Leg Room Service, Cleanliness, Food and Drink AND In-flight Service.')
-        st.image("3.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/3.png")
 
     with col2:
         st.markdown("#### 4: Satisfaction Rating provided by the Various Passengers On: ")
         st.markdown('In-flight Wifi Service, In-flight Entertainment AND Baggage Handling.')
-        st.image("4.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/4.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("#### 5: Satisfaction Level of Passengers On:")
         st.markdown('Cleanliness.')
-        st.image("5.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/5.png")
     with col2:
         st.write("#### 6: Satisfaction Level of Passengers On:")
         st.markdown('Baggage Handling.')
-        st.image("6.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/6.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.write("#### 7: Satisfaction Level of Passengers On:")
         st.markdown('Food and Drink.')
-        st.image("7.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/7.png")
 
     with col2:
         st.markdown("#### 8: Satisfaction Indicator")
         st.markdown('Satisfied or Dissatisfied')
         ##st.write("*From this graph you can understand that most*")
-        st.image("8.png")
+        st.image("https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction/blob/d2ad0881103e3e5f314eea1cb1a4d7730f15573b/streamlit/images/8.png")
 
     col1, col2 = st.columns(2)
 
