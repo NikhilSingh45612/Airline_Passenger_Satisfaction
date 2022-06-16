@@ -5,7 +5,7 @@ First semester programing project
  * [Nikhil Kumar](https://github.com/NikhilSingh45612/Airline_Passenger_Satisfaction.git)
 
 
-### [Presentation live Environment](http://192.168.0.112:8501)
+### [Presentation live Environment]()
 
 ## Project overview
 * First semester programing project
