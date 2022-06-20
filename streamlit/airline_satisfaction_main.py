@@ -44,10 +44,17 @@ import matplotlib.pyplot as plt
 import streamlit as st
 import seaborn as sns
 
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import mean_absolute_error
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
+
 # Importing data
-
+eda_data = pd.read_csv(r'airline_passenger_satisfaction.csv')
 data = pd.read_csv(r'airline_passenger_satisfaction.csv', index_col=False)
-
+df = pd.read_csv(r'airline_passenger_satisfaction.csv')
 
 
 
@@ -88,67 +95,67 @@ def set_analysis():
     with col1:
         st.markdown("#### 1: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Arrival Delay, Departure and Arrival Time Convenience, Ease of Online Booking AND Check-in Service.')
-        st.image("1.png")
+        st.image("a.png")
 
     with col2:
         st.markdown("#### 2: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Online Boarding, Gate Location, On-board Service AND Seat Comfort.')
-        st.image("2.png")
+        st.image("b.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("#### 3: Satisfaction Rating provided by the various Passengers On: ")
         st.markdown('Leg Room Service, Cleanliness, Food and Drink AND In-flight Service.')
-        st.image("3.png")
+        st.image("c.png")
 
     with col2:
         st.markdown("#### 4: Satisfaction Rating provided by the Various Passengers On: ")
         st.markdown('In-flight Wifi Service, In-flight Entertainment AND Baggage Handling.')
-        st.image("4.png")
+        st.image("d.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("#### 5: Satisfaction Level of Passengers On:")
         st.markdown('Cleanliness.')
-        st.image("5.png")
+        st.image("e.png")
     with col2:
         st.write("#### 6: Satisfaction Level of Passengers On:")
         st.markdown('Baggage Handling.')
-        st.image("6.png")
+        st.image("f.png")
 
     col1, col2 = st.columns(2)
     with col1:
         st.write("#### 7: Satisfaction Level of Passengers On:")
         st.markdown('Food and Drink.')
-        st.image("7.png")
+        st.image("g.png")
 
     with col2:
         st.markdown("#### 8: Satisfaction Indicator")
         st.markdown('Satisfied or Dissatisfied')
         ##st.write("*From this graph you can understand that most*")
-        st.image("8.png")
+        st.image("h.png")
 
     col1, col2 = st.columns(2)
 
 def set_classmod():
     st.title("*Classification Model*")
-    st.write("We applied Four classification models, logistics regression, random forest model, Decision tree and Naive bayes . They gave a mean absolute error of ***0.186*** and ***0.074*** For the models. These results can be improved further by optimizing")
+    st.write("We applied Four classification models, logistics regression, random forest model, Decision tree and Naive bayes .  These results can be improved further by optimizing")
     st.subheader("*Prediction Using Logistic Regression Model*")
     st.write("##### Mean absolute error:")
-    st.write("0.18627592512391125")
+    st.write("0.2973898983")
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
     st.subheader("*Prediction Using Random Forest*")
     st.write("##### Mean absolute error:")
-    st.write("0.07434868389394159")
+    st.write("0.071680012319")
 
     st.subheader("*Prediction Using Decision Tree Classifier*")
     st.write("##### Accuracy:")
-    st.write("93.10324915306436")
+    st.write("93.60902371")
 
     st.subheader("*Prediction Using Naive Bayes*")
     st.write("##### Accuracy:")
-    st.write("81.68982907299045")
+    st.write("80.1576455189")
 
     
 
